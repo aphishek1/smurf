@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Smurfs</title>
+        
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <link href="css/image-zoom.css" rel="stylesheet" />
+
+
+        <link href="css/sty.css" rel="stylesheet" />
+
+       
+
+    </head>
+
+
+    <style>
+
+        #pic{
+          width:200px;
+          height:200px;
+          border-radius:20px;
+          text-align:right;
+          display:block;
+          margin:auto;
+        }
+
+        #pic:hover{
+            transform: scale(2.2) rotate(1deg);
+            opacity:0.90;
+           
+        }
+        
+        #myslider{
+          height: 20px;
+          text-align: justify;
+          border-radius:20px;
+          box-shadow: 1px 1px 1px rgb(75, 151, 172);
+          transition: 0.4s ease-in-out;
+        }
+
+
+@keyframes ani1
+{
+from{transform:rotateY(360deg) }
+to{transform:rotateY(0deg) }
+}
+
+
+@keyframes fadout
+{
+from{opacity:0;transform:scale(1.5);}
+to{opacity:0.99;}
+}
+
+@keyframes blink
+{from{opacity:0}
+to{opacity:1}
+}
+
+.picstyle
+{
+width:100px;
+height:100px;
+cursor:pointer;
+box-shadow:7px 7px 20px #D28B00;
+border-radius:150px;
+transition:1s ease-in-out;
+opacity:1;
+}
+
+
+.picstyle:hover
+{
+transform:scale(2.9)rotate(360deg);
+transition: 1s ease-out;
+border-radius:5px;
+filter:grayscale(0.5);
+padding:1px;
+}
+
+
+.mast .mast-subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.mast .mast-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 768px) {
+  .mast {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  .mast .mast-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  .mast .mast-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+        
+
+        
+      
+        
+</style>
+        
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3"  id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Smurfs</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">Upcoming</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Whats's New</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Smurfy Album</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mast">
+        <div class="container">
+            <div class="mast-subheading text-light">Welcome To Our Studio!</div>
+            <div class="mast-heading text-uppercase text-light">It's Nice To Meet You Again</div>
+            <a class="btn btn-success btn-xl text-uppercase" href="#about">Tell Me More</a>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="container-fluid  d-md-block justify-content-md-center"  id="about" >
+
+    <div class="row">
+        <div class="col-md-12 col-12 col-lg-6 text-center">
+
+            <div class="card">
+
+<div id="carouselDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="assets/img/portfolio/fullsize/4.jpg" class="d-block  w-100">
+          <div class="carousel-caption d-non d-md-block">
+              
+          </div>
+         </div>
+      <div class="carousel-item" data-bs-interval="2000" data-bs-theme="dark">
+        <img src="assets/img/portfolio/fullsize/5.jpg" class="d-block w-100">
+        <div class="carousel-caption d-non d-md-block">
+          
+      </div>
+     </div>
+  
+     <div class="carousel-item">
+       <img src="assets/img/portfolio/fullsize/6.jpg" class="d-block w-100">
+       <div class="carousel-caption d-non d-md-block">
+          
+       </div>
+     </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previouse</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="col-md-12 col-12 col-lg-6 mx-auto text-center">
+
+    <div class="card">
+
+
+<div id="carouselindicators" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+    </div>
+<div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/bg-masthead.jpg" class="d-block  w-100 ">
+
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/portfolio/fullsize/1.jpg" class="d-block w-100 ">
+   </div>
+
+   <div class="carousel-item">
+     <img src="assets/img/portfolio/fullsize/3.jpg" class="d-block w-100 ">
+   </div>
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselindicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previouse</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselindicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<section class="page-section bg-danger " id="services">
+    <div class="container px-4 px-lg-5 ">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">We've got what you need!</h2>
+                <hr class="divider divider-light" />
+                <p class="text-white-75 mb-4">Dive Deep Into the World Of Blue</p>
+                <a class="btn btn-light btn-xl" href="#portfolio">Get Started!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<img src="assets/img/portfolio/fullsize/1.jpg" id="pic">
+ <input type="range" min="0" max="5" id="myslider">
+
+
+<script>
+  //creating array is Javascript
+  /*
+  what is array:-colllection of related varibales i.e in javascript array is an object(class),
+  and used to create large no variables by single command eg:
+  index array=var uname=new array(3) //creating instance with five variables 
+  uname[0]="ravi"
+  uname[1]="rishi"
+  uname[2]="amit"
+  or
+  object array -= var uname=["ravi","rishi","amit"]
+
+  alert(uname[2])
+  */
+ 
+  var mycolor=["red","blue","green","orange","teal","brown"]
+  //alert(mycolor[3])
+  //document.bgcolor=mycolor[4]
+  //alert(mycolor.length)
+ 
+  var plist =["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg"]
+
+  var p = document.getElementById("pic")
+
+  var s = document.getElementById("myslider")
+
+  s.onchange = function()
+  {
+    p.src="assets/img/portfolio/fullsize/"+plist[s.value]
+  }
+
+</script>
+
+
+
+<div style="width:100%;margin:auto;text-align:center;padding:50px;" id="portfolio">
+
+    
+    <img src="https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/8291001/smurfscover.jpg?quality=90&strip=all&crop=0,8.1151832460733,100,83.769633507853"  class="picstyle">
+
+    <img src="assets/img/portfolio/fullsize/1.jpg" class="picstyle">
+    
+    
+    </div> 
+
+    <div style="width:100%;margin:auto;text-align:center;padding:20px;">
+    
+    
+    
+    <img src="https://www.denverpost.com/wp-content/uploads/2017/04/film-smurfs-review-adv07-b3f0eca4-1968-11e7-9887-1a5314b56a08.jpg?w=1024"  class="picstyle">
+    
+    
+    
+    <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2016/11/smurfs-the-lost-village-image.png"  class="picstyle">
+    
+    
+    
+    <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2017/04/smurfs-lost-village-header.jpg?q=70&fit=contain&w=1200&h=628&dpr=1"  class="picstyle">
+    
+    
+    
+    <img src="https://www.sonypicturesanimation.com/sites/default/files/styles/max_2600_x_2600/public/2020-04/thesmurfs_banner_2572x1100.jpg?itok=OjN-_uJR" class="picstyle">
+   
+    
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSptwVXePCK4mcU9O9o4F0_VonbxLyIAHeOciE80gItAbddU1ooZ1GJOjg7itlayBIxukk&usqp=CAU" class="picstyle">
+    
+    
+    
+    <img src="https://static01.nyt.com/images/2011/07/29/arts/29ROUNDUP_SMURF/29ROUNDUP_SMURF-articleLarge.jpg?quality=75&auto=webp&disable=upscale" class="picstyle">
+    
+    
+    
+    <img src="https://variety.com/wp-content/uploads/2013/07/smurfs2-pk-03_ck040.jpg?w=1000&h=667&crop=1"class="picstyle">
+   
+    
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEl33tjf1_fCDWYdzsMbNUzu29iGQgkUBpQg&s" class="picstyle">
+    </div> 
+    
+    <div style="width:100%;margin:auto;text-align:center;padding:50px;" >
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYFNvX5SL54Hr80XdjRFuEulcSb1yL6v7-wibOD2lvOvhbmDV5iRrDgBB3jfutfbSU0Ag&usqp=CAU"   class="picstyle">
+   
+    </div>
+
+
+    <div class="container px-4 px-lg-12 bg-dark  rounded-5 ">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-success mt-0">Now You Can Book Your Show Here</h2>
+                <hr class="divider divider-black" />
+                <p class="text-warning mb-4">Smurfy Gifts for Every Fan</p>
+                <a class="btn btn-light btn-xl" href="#contact">Go GO GO!</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<section class="page-section" id="contact">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="mt-0 text-danger">Let's Get In Touch!</h2>
+                <hr class="divider" />
+                <p class="text-muted mb-5">Book Your Ticket</p>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+             
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                        <label for="name">Full name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="email">Email address</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                        <label for="phone">Phone number</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                    </div>
+                    <!-- Message input-->
+                   
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    
+                    <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                <div>+1 (555) 123-4567</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<link rel="stylesheet" link href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+
+
+
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" link href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+<script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+
+</html>
